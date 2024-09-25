@@ -67,6 +67,6 @@ Representa um servidor externo que possui as rotas para:
 
 ## Links
 
-<a href="https://hub.docker.com/repository/docker/diegosous/webhook-node/general" target="_blank">Docker image</a> do webhook
+<a target="_blank" href="https://hub.docker.com/repository/docker/diegosous/webhook-node/general">Docker image</a> do webhook
 <br/>
-<a href="https://webhook-node-dev-0-1.onrender.com" target="_blank">Online server</a> (pode estar indisponível)
+<a target="_blank" href="https://webhook-node-dev-0-1.onrender.com">Online server</a> (pode estar indisponível)
