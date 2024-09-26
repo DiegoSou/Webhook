@@ -21,14 +21,4 @@ model ClientAccount {
   integration_flag Boolean  @default(false)
   integratedAt     DateTime
   salesforce_id    String   @unique
-  engagementHistory CustomerEngagementHistory[]
-}
-
-model CustomerEngagementHistory {
-  id             Int           @id @default(autoincrement())
-  createdAt      DateTime      @default(now())
-  owner          ClientAccount @relation(fields: [ownerId], references: [id])
-  ownerId        Int
-  actionDescribe String        @db.VarChar(255)
-  additionalInfo String?
 }
