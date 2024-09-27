@@ -1,0 +1,51 @@
+button
+{
+    background: #EEF4FF;
+}
+
+.container
+{
+    margin: 5%;
+    border: solid 0.5px rgb(185, 185, 185);
+}
+
+.container-header
+{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: large;
+    color: #363636;
+    text-align: center;
+}
+
+.multiple-header-container
+{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+@media only screen and (max-width: 560px)
+{
+    .multiple-header-container
+    {
+        flex-direction: column;
+    }
+}
+
+.multiple-header-container .container-header
+{
+    margin: 0.5rem;
+    align-self: center;
+}
+
+.container-content
+{
+    padding: 1%;
+    text-align: start;
+    font-size: medium;
+}
+
+.container-content-element
+{
+    margin: 0.5rem;
+}

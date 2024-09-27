@@ -1,3 +1,3 @@
-import { app } from '@controllers/server'
+import app from 'src/server'
 
-app.listen(3000, '0.0.0.0', () => console.log(`🚀 Server ready.`))
+app.listen(3000, '0.0.0.0', () => console.log(`🚀 Server ready.`));

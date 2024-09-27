@@ -1,4 +1,4 @@
-import prisma from "@db/prisma"
+import prisma from "src/prisma"
 
 export async function createClientAccount(
     name: string,

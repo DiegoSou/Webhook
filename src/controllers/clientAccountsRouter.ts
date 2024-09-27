@@ -5,7 +5,10 @@ import { deleteClientAccount } from '@db/clientAccounts/clientAccountsDelete'
 import { updateClientAccount } from '@db/clientAccounts/clientAccountsUpdate'
 
 
+// Define router
 const router = Router()
+
+// Client find all
 
 router.get(`/clientAccounts/report`, async (req, res) => {  
     try {
@@ -17,6 +20,8 @@ router.get(`/clientAccounts/report`, async (req, res) => {
         res.status(500).json({ error: 'Server error!' })
     }
 })
+
+// Client find by id
 
 router.get(`/clientAccounts/report/:id`, async (req, res) => {  
     const { id } = req.params
@@ -31,6 +36,8 @@ router.get(`/clientAccounts/report/:id`, async (req, res) => {
     }
 })
 
+// Client create
+
 router.post(`/clientAccounts/create`, async (req, res) => {
     const { name, description, integration_flag, integratedAt, salesforce_id } = req.body
 
@@ -43,6 +50,8 @@ router.post(`/clientAccounts/create`, async (req, res) => {
         res.status(500).json({ error: 'Server error!' })
     }
 })
+
+// Client update by id
 
 router.put(`/clientAccounts/update/:id`, async (req, res) => {
     const { id } = req.params
@@ -58,6 +67,8 @@ router.put(`/clientAccounts/update/:id`, async (req, res) => {
     }
 })
 
+// Client delete
+
 router.delete(`/clientAccounts/delete/:id`, async (req, res) => {
     const { id } = req.params
 
@@ -70,5 +81,6 @@ router.delete(`/clientAccounts/delete/:id`, async (req, res) => {
         res.status(500).json({ error: 'Server error!' })
     }
 })
+
 
 export { router as clientAccountsRouter }
