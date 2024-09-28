@@ -11,12 +11,12 @@ const clientAccountColumns = [
 let clientAccountsReport;
 async function fetchClientAccountsReport()
 {
-    let urlFetch = await fetch('http://localhost:3000/clientAccounts/report');
+    let urlFetch = await fetch(location.origin + '/clientAccounts/report');
     clientAccountsReport = await urlFetch.json();
 
     let firstRowsContainer = document.getElementById('rows-container-1');
     firstRowsContainer.innerHTML = '';
-    
+
     for(let clientAccount of clientAccountsReport.data.allClientAccounts)
     {
         let row = document.createElement('tr');
