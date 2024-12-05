@@ -13,6 +13,13 @@ datasource db {
   url      = env("DATABASE_URL")
 }
 
+model WebhookLog {
+  id               Int      @id @default(autoincrement())
+  createdAt        DateTime @default(now())
+  description      String
+  external_id      String   @unique
+}
+
 model ClientAccount {
   id               Int      @id @default(autoincrement())
   createdAt        DateTime @default(now())
