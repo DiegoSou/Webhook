@@ -8,6 +8,7 @@ const app = express();
 
 app.use(express.static('src/views'));
 app.use(bodyParser.json());
+
 app.use(webhookDefaultRouter)
 app.use(clientAccountsRouter)
 

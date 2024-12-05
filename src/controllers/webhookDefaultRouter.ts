@@ -6,7 +6,7 @@ const router = Router()
 
 // Log create
 
-router.post(`/`, async (req, res) => {
+router.post(`/log`, async (req, res) => {
     const { description, external_id } = req.body
 
     try {
