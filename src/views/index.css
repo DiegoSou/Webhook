@@ -1,11 +1,11 @@
-button
-{
-    background: #EEF4FF;
+body {
+    min-height: 600px;
+    padding: 10px;
 }
 
 .container
 {
-    margin: 5%;
+    margin: 3%;
     border: solid 0.5px rgb(185, 185, 185);
 }
 

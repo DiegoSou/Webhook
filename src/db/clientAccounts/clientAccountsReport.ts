@@ -1,4 +1,4 @@
-import prisma from "src/prisma"
+import prisma from "@db/prisma"
 
 export async function findAllClientAccounts() 
 {

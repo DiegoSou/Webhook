@@ -16,8 +16,11 @@ datasource db {
 model WebhookLog {
   id               Int      @id @default(autoincrement())
   createdAt        DateTime @default(now())
-  description      String
-  external_id      String   @unique
+  requestUrl       String
+  requestMethod    String
+  requestParams    String
+  requestBody      String
+  externalId       String?
 }
 
 model ClientAccount {
@@ -25,7 +28,4 @@ model ClientAccount {
   createdAt        DateTime @default(now())
   name             String   @db.VarChar(255)
   description      String?
-  integration_flag Boolean  @default(false)
-  integratedAt     DateTime
-  salesforce_id    String   @unique
 }

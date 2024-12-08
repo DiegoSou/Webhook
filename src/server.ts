@@ -1,15 +1,15 @@
 import express from 'express'
 import bodyParser from 'body-parser'
-import { webhookDefaultRouter } from '@controllers/webhookDefaultRouter'
-import { clientAccountsRouter } from '@controllers/clientAccountsRouter'
-
+import { webhookLogsRouter } from '@routes/webhookLogsRouter'
+import { clientAccountsRouter } from '@routes/clientAccountsRouter'
 
 const app = express();
 
 app.use(express.static('src/views'));
 app.use(bodyParser.json());
-
-app.use(webhookDefaultRouter)
-app.use(clientAccountsRouter)
+app.use(
+    webhookLogsRouter, 
+    clientAccountsRouter
+)
 
 export default app

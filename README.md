@@ -70,3 +70,9 @@ Representa um servidor externo que possui as rotas para:
 <a target="_blank" href="https://hub.docker.com/repository/docker/diegosous/webhook-node/general">Docker image</a> do webhook
 <br/>
 <a target="_blank" href="https://webhook-node-dev-0-1.onrender.com">Online server</a> (pode estar indisponível)
+
+## Comandos
+
+```
+
+```
